@@ -1,24 +1,19 @@
 #include <stdio.h>
+
 /**
- * main - the start of the program
- *This program will print lowercase and uppercase letter and a lin
- *Return:  always 0 indicating success
+ * main -outputs alphabet in lowercase, and then in uppercase,
+ * followed by a new line
+ * Return: Indicates always 0 (Success)
  */
 int main(void)
 {
-	int a = 97;
-	int b = 65;
+	int ch;
 
-	while (a <= 122)
-	{
-		putchar(a);
-		a++;
-	}
-	while (b <= 90)
-	{
-		putchar(b);
-		b++;
-	}
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);
+	for (ch = 'A'; ch <= 'Z'; ch++)
+		putchar(ch);
 	putchar('\n');
-	Return (0);
+	return (0);
 }
+
