@@ -1,10 +1,14 @@
 #include <stdlib.h>
 #include <time.h>
-/* main - the start of the if else statement */
+/**
+ * main - Entry to determine if a number is + ,- or 0
+ *
+ * Return: Always 0 (Success) indicating successful end of the program
+ */
 
-/* The function will return 0 indicating success */
 int main(void)
 {
+
 	int n;
 
 	srand(time(0));
