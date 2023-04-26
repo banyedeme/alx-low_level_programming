@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * print_alphanet_x10 - print 10x the alphabet in lowercase
- * Followed by new line
- * The function returns nothing
+ * print_alphabet_x10 - print 10x the alphabet in lowercase
+ * Followed by ne line
+ * function takes no parameter and  returns no arguments
  * @void:Takes no arguments
  */
 void print_alphabet_x10(void)
