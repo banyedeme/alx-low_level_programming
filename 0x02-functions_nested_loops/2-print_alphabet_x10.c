@@ -1,7 +1,10 @@
 #include "main.h"
-/* print_alphanet_x10 in lowercase - printing x10 alphabet in lowercase */
-/* the function is declared void and it returns 0 */
-/*  Followed by newline */
+/**
+ * print_alphanet_x10 - print 10x the alphabet in lowercase
+ * Followed by new line
+ * The function returns nothing
+ * @void:Takes no arguments
+ */
 void print_alphabet_x10(void)
 {
 		char j;
