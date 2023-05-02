@@ -6,7 +6,7 @@
  * return: 0
  */
 void print_rev(char *s)
-i{
+{
 	int maame = 0;
 	int papa;
 
