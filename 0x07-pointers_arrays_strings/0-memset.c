@@ -6,15 +6,15 @@
  * @n: number of bytes to be changed
  * Return: changed array with new value for n bytes
  */
-
 char *_memset(char *s, char b, unsigned int n)
 {
-	 int q = 0;
+	int x = 0;
 
-	for (; q < n; q++)
+	for (; n > 0; x++)
 	{
-		s[q] = b;
+		s[x] = b;
 		n--;
 	}
 	return (s);
 }
+
