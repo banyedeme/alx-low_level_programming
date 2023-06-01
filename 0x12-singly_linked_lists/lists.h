@@ -8,11 +8,11 @@
  * @next: points to next node
  * @str: string - the stringc for malloc
  */
-typedef struct list_z
+typedef struct list_s
 {
 	char *str;
-	unsigned int less;
-	struct list_z *moi;
+	unsigned int len;
+	struct list_s *next;
 } list_t;
 
 size_t print_list(const list_t *h);
