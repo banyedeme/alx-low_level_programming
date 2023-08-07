@@ -48,15 +48,15 @@ void check_elf(unsigned char *e_ident)
  */
 void print_magic(unsigned char *e_ident)
 {
-	int ind;
+	int index;
 
 	printf(" Magic: ");
 
-	for (ind = 0; ind < EI_NIDENT; ind++)
+	for (index = 0; index < EI_NIDENT; index++)
 	{
-		printf("%02x", e_ident[ind]);
+		printf("%02x", e_ident[index]);
 
-		if (ind == EI_NIDENT - 1)
+		if (index == EI_NIDENT - 1)
 			printf("\n");
 		else
 			printf(" ");

@@ -13,18 +13,18 @@ void close_file(int fd);
  */
 char *create_buffer(char *file)
 {
-	char *buffer;
+	char *buff;
 
-	buffer = malloc(sizeof(char) * 1024);
+	buff = malloc(sizeof(char) * 1024);
 
-	if (buffer == NULL)
+	if (buff == NULL)
 	{
 		dprintf(STDERR_FILENO,
 			"Error: Can't write to %s\n", file);
 		exit(99);
 	}
 
-	return (buffer);
+	return (buff);
 }
 
 /**
@@ -33,11 +33,11 @@ char *create_buffer(char *file)
  */
 void close_file(int fd)
 {
-	int c;
+	int b;
 
-	c = close(fd);
+	b = close(fd);
 
-	if (c == -1)
+	if (b == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd);
 		exit(100);
@@ -77,7 +77,7 @@ int main(int argc, char *argv[])
 		{
 			dprintf(STDERR_FILENO,
 				"Error: Can't read from file %s\n", argv[1]);
-			free(buffer);
+			free(buff);
 			exit(98);
 		}
 
