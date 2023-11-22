@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """Technical interview prep task: Island Perimeter"""
 
+
 def island_perimeter(grid):
- """Returns the perimiter of an island"""
+    """Returns the perimiter of an island"""
     shape = 0
     sizes = 0
     length = len(grid)
